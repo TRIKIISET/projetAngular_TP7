@@ -7,6 +7,7 @@ import { ListmaterielComponent } from './composants/informatique/listmateriel/li
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
 import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
 import { CommentComponent } from './composants/commentaires/comment/comment.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CommentComponent } from './composants/commentaires/comment/comment.comp
     CommentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
