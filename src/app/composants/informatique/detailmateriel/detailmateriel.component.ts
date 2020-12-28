@@ -18,7 +18,7 @@ onClick(){
   constructor(private materielService:MaterielService) { }
 
   ngOnInit(): void {
-    this.materiel = this.materielService.getMaterielById("3");
+    this.materiel = this.materielService.getMaterielById("2");
   }
 
 }
