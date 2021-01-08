@@ -81,6 +81,11 @@ getMaterielById(id:string):Materiel{
 
 ajouterCommentaire(materiel:Materiel, comm:Commentaire){
   let m : Materiel = this.getMaterielById(materiel.id);
+  /* La première instruction n'est pas nécessaire dans la mesure où
+  materiel est une référence qui désigne déjà le matériel auquel sera ajouté le
+  commentaire,
+  donc on peut directement faire materiel.commentaires.push(comm);
+  */
   m.commentaires.push(comm);
 }
   constructor() { }
