@@ -29,11 +29,15 @@
             </ul>
             
         </div>
-        <div class="col-6" *ngIf="afficher">
-            <h2>Liste des commentaires</h2>
-            <div *ngFor= "let c of materiel.commentaires; index as i">
-                <app-comment [comm]="c" [indice]="i"></app-comment>
+        <div class="col-6" >
+            <div *ngIf="afficher">
+                <h2>Liste des commentaires</h2>
+                <div *ngFor= "let c of materiel.commentaires; index as i">
+                    <app-comment [comm]="c" [indice]="i"></app-comment>
+                </div>
             </div>
+            <app-addcomment></app-addcomment>
+
         </div>
     </div>
 </div>

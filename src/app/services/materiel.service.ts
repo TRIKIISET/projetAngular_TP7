@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Commentaire } from '../models/commentaire';
 import { Materiel } from '../models/materiel';
 
 @Injectable({
@@ -77,5 +78,10 @@ getMaterielById(id:string):Materiel{
 getMaterielById(id:string):Materiel{
   return this.materiels.filter(m => m.id == id)[0];
 }*/
+
+ajouterCommentaire(materiel:Materiel, comm:Commentaire){
+  let m : Materiel = this.getMaterielById(materiel.id);
+  m.commentaires.push(comm);
+}
   constructor() { }
 }

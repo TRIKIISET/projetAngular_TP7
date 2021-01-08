@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './composants/contact/contact.component';
 import { Error404Component } from './composants/error404/error404.component';
 import { MenuComponent } from './composants/menu/menu.component';
+import { AddcommentComponent } from './composants/commentaires/addcomment/addcomment.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { MenuComponent } from './composants/menu/menu.component';
     CommentComponent,
     ContactComponent,
     Error404Component,
-    MenuComponent
+    MenuComponent,
+    AddcommentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
